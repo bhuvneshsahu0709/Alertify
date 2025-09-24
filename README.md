@@ -2,6 +2,11 @@
 
 Alertify is a modern MERN application for creating and delivering organization-wide alerts with per-user read/snooze tracking, admin targeting, and analytics.
 
+<img width="1914" height="923" alt="Screenshot 2025-09-25 003413" src="https://github.com/user-attachments/assets/2c855f20-9f79-4630-b7b4-b77c8316eeba" />
+<img width="1884" height="966" alt="Screenshot 2025-09-25 012613" src="https://github.com/user-attachments/assets/247a45b0-7d93-47dd-badf-c0ba33025978" />
+<img width="1898" height="914" alt="Screenshot 2025-09-25 012837" src="https://github.com/user-attachments/assets/9a994db5-228e-48a0-a5d3-8db90c34c88a" />
+<img width="1881" height="958" alt="Screenshot 2025-09-25 012637" src="https://github.com/user-attachments/assets/f910d579-15be-40b1-8e7d-efe161e98150" />
+
 ## Tech Stack
 - Backend: Node.js, Express, Mongoose (MongoDB), JWT
 - Frontend: React (Vite + Mantine UI), React Router
