@@ -1,0 +1,30 @@
+{
+  "name": "alertify-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "author": "Bhuvnesh Sahu",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5174"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.13.2",
+    "@mantine/dates": "^7.13.2",
+    "@mantine/form": "^8.3.2",
+    "@mantine/notifications": "^7.13.2",
+    "@tabler/icons-react": "^3.35.0",
+    "axios": "^1.7.3",
+    "dayjs": "^1.11.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.26.0",
+    "recharts": "^3.2.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.1"
+  }
+}
+
