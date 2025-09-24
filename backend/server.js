@@ -2,6 +2,7 @@ const express = require('express');
 const connectDB = require('./config/db');
 const cors = require('cors');
 const path = require('path');
+const fs = require('fs');
 const reminderScheduler = require('./services/ReminderScheduler');
 require('dotenv').config();
 
@@ -29,10 +30,14 @@ const PORT = process.env.PORT || 5001;
 // In production, serve frontend build
 if (process.env.NODE_ENV === 'production') {
   const clientDist = path.resolve(__dirname, '..', 'frontend', 'dist');
-  app.use(express.static(clientDist));
-  app.get('*', (_req, res) => {
-    res.sendFile(path.join(clientDist, 'index.html'));
-  });
+  if (fs.existsSync(clientDist)) {
+    app.use(express.static(clientDist));
+    app.get('*', (_req, res) => {
+      res.sendFile(path.join(clientDist, 'index.html'));
+    });
+  } else {
+    console.log('Frontend dist not found. Serving API only.');
+  }
 }
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT} ✅`));
